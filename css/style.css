@@ -18,7 +18,7 @@ svg {
 .container {
      /* border: black 1px solid; */
      min-height: 70vh;
-     background-image: url('/img/globe.png');
+     background-image: url('../img/globe.png');
      background-repeat: no-repeat;
      background-position: 55% 30%;
      background-size: 80%;
