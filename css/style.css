@@ -1,0 +1,200 @@
+body {
+     min-height: 100vh;
+     background-image: linear-gradient(rgba(87, 76, 241, 0.37), rgba(191, 159, 132, 0.4));
+     background-size: cover;
+}
+
+svg {
+     width: 100%;
+} 
+
+/* Buttons Color */
+.btn-outline-primary {
+     color: #0008ff;
+     /* border-color: #2906de; */
+}
+
+/* Globe Design */
+.container {
+     /* border: black 1px solid; */
+     min-height: 70vh;
+     background-image: url('/img/globe.png');
+     background-repeat: no-repeat;
+     background-position: 55% 30%;
+     background-size: 80%;
+}
+
+.col {
+     /* border: black 1px solid; */
+     min-height: 40vh;
+}
+
+.row {
+     /* border: black 1px solid; */
+     /* min-height: 50vh; */
+}
+
+/* Buttons Design */
+.theShanghaiTime {
+     /*  */
+}
+
+.theParis {
+     /* border: black 1px solid; */
+}
+
+/* Animation Rule */
+/* GMT */
+#GMT {
+     animation: gmtColor 4s ease-in-out;
+}
+
+@keyframes gmtColor {
+     from {
+          fill: #fdd114;
+     }
+     to {
+          fill:black;
+     }
+}
+
+#gmt {
+     animation: gmt 4s ease-in-out;
+     transform-origin: center;
+     transform-box: fill-box;
+}
+
+@keyframes gmt {
+     from {
+          transform: rotateZ(0deg);
+     }
+     to {
+          transform: rotateZ(360deg);
+     }
+}
+
+/* NEGATIVE NUMBERS */
+#NEGATIVENUMS {
+     animation: negativeNumsColor 6s linear;
+     fill: #6c757d;
+}
+
+@keyframes negativeNumsColor {
+     0%   {fill: #ffd11b;}
+     25%  {fill: #ffbc9a;}
+     50%  {fill: #a2b357;}
+     75%  {fill: #03a6cf;}
+     100% {fill: black;}
+}
+
+/* #negativeNums {
+     animation: negativeNumsMove 4s ease-in-out;
+     transform-origin: center;
+     transform-box: fill-box;
+}
+
+@keyframes negativeNumsMove {
+     from {
+          transform: rotateZ(0deg);
+     }
+     to {
+          transform: rotateZ(360deg);
+     }
+} */
+
+/* NUMBERS */
+#NUMS {
+     animation: numsColor 7s linear;
+     fill: #6c757d;
+}
+
+@keyframes numsColor {
+     0%   {fill: #e6b3a1;}
+     25%  {fill: #03a6cf;}
+     50%  {fill: #a2b357;}
+     75%  {fill: #ffbc9a;}
+     100% {fill: black;}
+}
+
+/* #nums {
+     animation: numsMove 4s ease-in-out;
+     transform-origin: center;
+     transform-box: fill-box;
+}
+
+@keyframes numsMove {
+     from {
+          transform: rotateZ(0deg);
+     }
+     to {
+          transform: rotateZ(360deg);
+     }
+} */
+
+/* PIPE */
+#PIPE {
+     animation: pipeColor 4s ease-in-out;
+}
+
+@keyframes pipeColor {
+     from {
+          stroke: #fdd114;
+     }
+     to {
+          stroke:black;
+     }
+}
+
+#pipe {
+     animation: pipeMove 6s ease-in-out;
+     transform-origin: center;
+     transform-box: fill-box;
+}
+
+@keyframes pipeMove {
+     from {
+          transform: rotateZ(360deg);
+     }
+     to {
+          transform: rotateZ(0deg);
+     }
+}
+
+/* END */
+
+
+/* Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 340px) { 
+     .container {
+          background-position: 55% 42%;
+     }
+
+     .mt-5 {
+          margin-top: 0 !important;
+     }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+     
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+     .container {
+          background-position: 55% 30%;
+          background-size: 82%;
+     } 
+     .mt-5 {
+          margin-top: 3rem !important;
+     }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+     .mt-5 {
+          margin-top: 6rem !important;
+     }
+ }
